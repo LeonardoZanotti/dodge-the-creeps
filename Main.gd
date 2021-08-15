@@ -2,7 +2,9 @@ extends Node
 
 export (PackedScene) var mob_scene
 
-
+func _ready():
+	randomize()
+	
 func _on_MobTimer_timeout():
 	var mob_spawn_location = $MobPath/MobSpawnLocation
 	mob_spawn_location.unit_offset = randf()

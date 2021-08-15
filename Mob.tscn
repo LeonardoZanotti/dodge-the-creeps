@@ -33,6 +33,7 @@ height = 35.6038
 [node name="Mob" type="RigidBody2D" groups=[
 "mobs",
 ]]
+collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 7 )
 
