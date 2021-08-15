@@ -6,6 +6,7 @@ export var speed = 400.0
 var screen_size = Vector2.ZERO
 
 func _ready():
+	hide()
 	screen_size = get_viewport_rect().size
 	
 func _process(delta):

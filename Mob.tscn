@@ -27,8 +27,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 45.1813
-height = 35.6038
+radius = 31.2553
+height = 23.636
 
 [node name="Mob" type="RigidBody2D" groups=[
 "mobs",
@@ -38,6 +38,7 @@ gravity_scale = 0.0
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
 animation = "swim"
 
