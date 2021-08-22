@@ -25,8 +25,10 @@ func _process(delta):
 		direction = direction.normalized()
 		# get_node("AnimatedSprite").play()
 		$AnimatedSprite.play()
+		$Trail.emitting = true
 	else:
 		$AnimatedSprite.stop()
+		$Trail.emitting = false
 		
 	if direction.x != 0:
 		$AnimatedSprite.animation = "right"
